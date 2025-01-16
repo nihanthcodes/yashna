@@ -9,13 +9,11 @@ import javax.swing.JFrame;
 import edu.bothell.multi_ui.core.Control;
 
 public class JTile extends JButton implements ActionListener, Locatable {
-    
     private final JFrame  b;
     private final Control c;
     
     private final int[]   pos;
     private char          it;
-
 
     public JTile(Swing b, int[] pos){
         this.b      = b;

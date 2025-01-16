@@ -5,9 +5,7 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class Wall extends Thing {
-    public Wall(){
-        super(2);
-    }
+    public Wall(){super(2);}
 
     public static void build(Location l, Random die){
         if(l.getTerrain() == null)  return;

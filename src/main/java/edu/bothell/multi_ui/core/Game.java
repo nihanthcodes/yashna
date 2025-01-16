@@ -19,7 +19,6 @@ public class Game {
     public Player addPlayer(Player p){
         this.p.add(p);
         if(this.active == null) active = p;
-
         return p;
     }
 
@@ -39,7 +38,24 @@ public class Game {
     
     public boolean isValid(int[] pos, String sId){
         System.out.println("isVAlid?"+s.getIt(pos)+"|" + sId+"|" + active.getSId()+"|");
-        return s.isOpen(pos) && active.getSId().equals(sId);
+        if (pos[0] > 2 || pos[1] > 2){
+            return false;
+        }else{
+            return true;
+        }
+        // return s.isOpen(pos) && active.getSId().equals(sId);
+    }
+    
+    public boolean checkWin(){
+        for (int i=0; i<3; i++){
+            if ()
+        }
+        return true;
+    }
+
+    public boolean gameEnd(){
+        
+        return true;
     }
 
     public char play(int[] pos, String sId){
